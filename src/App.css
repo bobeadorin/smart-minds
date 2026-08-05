@@ -1,0 +1,70 @@
+.hero-section{
+  width:100%;
+  height:100vh;
+  background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0) 70%, rgba(255,255,255,1) 95%),
+    url('/logos/fundal1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover ;
+}
+.page-section{
+  width: 100%;
+  height:100vh;
+  border-bottom: 10px solid black;
+  padding:5rem;
+}
+
+.hero-content{
+  color:white;
+  position:relative;
+
+  top:5rem;
+  left:8rem
+}
+
+
+.hero-title{
+  font-size: 5.5rem;
+  margin-bottom:2rem
+}
+
+.hero-subtitle{
+  font-size: 2.5rem;
+  font-weight:lighter;
+}
+
+.hero-image{
+  width: 30rem;
+  height:30rem;
+  position:relative;
+  top:43vh;
+  left:5vw;
+
+}
+
+
+.about-objectives-section{
+  background-color:white;
+  color:#436d72;
+  display:flex;
+}
+
+
+.objectives-container{
+  width: 50%;
+}
+
+.objectives-content-container{
+  display:flex;
+}
+
+.objectives-content-row-number{
+  width: 7rem;
+  height: 7rem
+}
+
+.objectives-image{
+  width:10rem;
+  height:10rem;
+}
