@@ -53,7 +53,7 @@ const AboutObjectivesSection = () => {
       {/* --------------- objectives section --------------- */}
       <div className={"objectives-container"}>
         <h2 className={"objectives-title"}>Objectives</h2>
-        <div>
+        <div className="objectives-list">
           <div className={"objectives-content-container"}>
             <img className={"objectives-content-row-number"} src="/logos/1.png" alt="" />
             <p className={"objectives-content-row-content"}>
@@ -91,8 +91,8 @@ const AboutObjectivesSection = () => {
           </div>
         </div>
         <div className="objectives-image-container">
-          <img className="objectives-image" src="/logos/meditatie.png" alt="" />
-          <img className="objectives-image" src="/logos/meditatie.png" alt="" />
+          <div className="objectives-image" src="/logos/meditatie.png" alt="" />
+          <div className="objectives-image" src="/logos/meditatie.png" alt="" />
         </div>
       </div>
     </section>
@@ -100,11 +100,57 @@ const AboutObjectivesSection = () => {
 };
 
 const ProjectRecapSection = () => {
-  return <section className="page-section project-recap-section"></section>;
+  return (
+    <section className="page-section project-recap-section">
+      <div className="project-recap-inner">
+        <h2 className="project-recap-title">Project Recap</h2>
+        <div className="project-recap-content">
+          Take a look back at the our journey. This short video captures the highlights of the project, the learning experiences,
+          meaningful connections and memorable moments shared by participants throughout the mobility.
+        </div>
+      </div>
+      <div className="project-recap-image-placeholder">This will be an image div in the css coming soon img</div>
+    </section>
+  );
 };
 
 const GuideBookSection = () => {
-  return <section className="page-section guide-book-section"></section>;
+  return (
+    <section className="page-section guide-book-section">
+      <div className="guide-book-container">
+        <div className="guide-book-intro">
+          <h2 className="guide-book-title">SMART Minds - Guide book</h2>
+          <p className="guide-book-description">
+            The <b>MENTAL HEALTH YOUTH GUIDE</b> is a practical resource created to help young people better understand mental
+            health and emotional well-being. It combines accessible information, practical exercises, reflection activities and
+            mindfulness techniques that encourage self-awareness, resilience and healthy coping strategies. Whether you read it
+            from beginning to end or explore individual chapters, the guide is designed to support your personal well-being
+            journey.
+          </p>
+        </div>
+        <div className="guide-book-discovery">
+          <h2 className="guide-book-discovery-title">What you'll discover?</h2>
+          <ul className="guide-book-list">
+            <li className="guide-book-list-item">An introduction to the language of mental health and emotional well-being.</li>
+            <li className="guide-book-list-item">The most common mental health challenges faced by young people.</li>
+            <li className="guide-book-list-item">Myths and stereotypes that prevent open conversations about mental health.</li>
+            <li className="guide-book-list-item">Practical strategies for coping with stress and emotional difficulties.</li>
+            <li className="guide-book-list-item">Simple well-being techniques to build healthier daily habits.</li>
+            <li className="guide-book-list-item">Guided self-reflection and journaling activities for personal growth.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="guide-book-action-container">
+        <img className="guide-book-image" src="/logos/guideCover.jpeg" alt="Guide preview" />
+        <div className="guide-book-link-container">
+          <a className="guide-book-link" href="/logos/Mental_Health_Youth_Guide.pdf" download="Mental Health Youth Guide.pdf">
+            Read the guide
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 const MakeItHappendSection = () => {

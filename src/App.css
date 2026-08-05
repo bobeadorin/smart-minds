@@ -1,70 +1,210 @@
-.hero-section{
-  width:100%;
-  height:100vh;
-  background-image:
-    linear-gradient(to bottom, rgba(255,255,255,0) 70%, rgba(255,255,255,1) 95%),
-    url('/logos/fundal1.png');
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 95%), url("/logos/fundal1.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover ;
+  background-size: cover;
 }
-.page-section{
+.page-section {
   width: 100%;
-  height:100vh;
-  border-bottom: 10px solid black;
-  padding:5rem;
+  height: 100vh;
+  /* border-bottom: 10px solid black; */
+  padding: 5rem;
 }
 
-.hero-content{
-  color:white;
-  position:relative;
+.hero-content {
+  color: white;
+  position: relative;
 
-  top:5rem;
-  left:8rem
+  top: 5rem;
+  left: 8rem;
 }
 
-
-.hero-title{
+.hero-title {
   font-size: 5.5rem;
-  margin-bottom:2rem
+  margin-bottom: 2rem;
 }
 
-.hero-subtitle{
+.hero-subtitle {
   font-size: 2.5rem;
-  font-weight:lighter;
+  font-weight: lighter;
 }
 
-.hero-image{
+.hero-image {
   width: 30rem;
-  height:30rem;
-  position:relative;
-  top:43vh;
-  left:5vw;
-
+  height: 30rem;
+  position: relative;
+  top: 43vh;
+  left: 5vw;
 }
 
-
-.about-objectives-section{
-  background-color:white;
-  color:#436d72;
-  display:flex;
+.about-objectives-section {
+  background-color: white;
+  color: #436d72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  line-height: 1.5;
 }
 
+.about-objectives-title {
+  width: 100%;
+  text-align: left;
+  font-size: 3rem;
+}
 
-.objectives-container{
+.about-objectives-content {
   width: 50%;
+  height: 100%;
+  /* padding-left:2rem; */
+  padding-right: 2rem;
 }
 
-.objectives-content-container{
-  display:flex;
+.about-objectives-content-text {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  text-align: justify;
 }
 
-.objectives-content-row-number{
+.objectives-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.objectives-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.objectives-content-row-number {
   width: 7rem;
-  height: 7rem
+  height: 7rem;
+}
+.objectives-content-row-content {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+.objectives-image {
+  width: 30rem;
+  height: 15rem;
+  background-image: url("/logos/meditatie.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.objectives-image{
-  width:10rem;
-  height:10rem;
+.objectives-title {
+  text-align: center;
+  font-size: 3rem;
+  background-color: #436d72;
+  color: white;
+  border-radius: 60px;
+  width: 80%;
+}
+
+.objectives-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-recap-inner {
+  width: 100%;
+  color: #ff751f;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.project-recap-title {
+  font-size: 4rem;
+  width: 40%;
+}
+
+.project-recap-content {
+  font-size: 2rem;
+  width: 100%;
+  font-style: italic;
+}
+
+.project-recap-image-placeholder {
+  width: 100%;
+  height: 90%;
+  background-image: url("/logos/comingSoonPlaceholder.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.guide-book-section {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+  /* align-items: center; */
+}
+
+.guide-book-intro {
+  margin-bottom: 3rem;
+}
+
+.guide-book-title {
+  font-size: 3rem;
+  color: #ff751f;
+  margin-bottom: 2rem;
+}
+
+.guide-book-discovery-title {
+  color: #ff751f;
+}
+
+.guide-book-description {
+  font-size: 1.2rem;
+}
+
+.guide-book-list-item {
+  font-size: 1.2rem;
+}
+
+b {
+  color: #ff751f;
+}
+
+.guide-book-container {
+  width: 40%;
+}
+
+.guide-book-action-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.guide-book-image {
+  width: 20rem;
+  height: 60%;
+  border: 1px solid black;
+}
+
+.guide-book-link-container {
+  background-color: #436d72;
+
+  width: 20rem;
+  height: 3rem;
+}
+
+.guide-book-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
 }
