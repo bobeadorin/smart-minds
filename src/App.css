@@ -111,6 +111,9 @@
   width: 80%;
 }
 
+.project-recap-section{
+  background: #f8f8f8;
+}
 .objectives-image-container {
   width: 100%;
   display: flex;
@@ -165,14 +168,18 @@
 
 .guide-book-discovery-title {
   color: #ff751f;
+  font-size:2rem;
 }
 
 .guide-book-description {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  width: 85%;
+   text-align: justify;
 }
 
 .guide-book-list-item {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+  text-align: justify;
 }
 
 b {
@@ -180,31 +187,159 @@ b {
 }
 
 .guide-book-container {
-  width: 40%;
+  width: 70%;
+}
+
+.guide-book-list{
+  padding-left:2rem;
 }
 
 .guide-book-action-container {
-  width: 60%;
+  width: 30%;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 2rem;
 }
 .guide-book-image {
-  width: 20rem;
-  height: 60%;
+  width: 25rem;
+  height: 35rem;
   border: 1px solid black;
+  margin-bottom:1rem;
 }
 
 .guide-book-link-container {
   background-color: #436d72;
-
-  width: 20rem;
-  height: 3rem;
+  width: 25rem;
+  height: 4rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .guide-book-link {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
+}
+
+
+.make-it-happend-section {
+  /* padding: 80px 0; */
+  background: #f8f8f8;
+}
+
+
+.section-title {
+  font-size: 3rem;
+  color: #45656b;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+.mih-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* LEFT */
+
+.mih-illustration img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* CENTER */
+
+.mih-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.host,
+.partner {
+  text-align: center;
+}
+
+.host h3,
+.partners h3 {
+  color: #45656b;
+  font-size: 2rem;
+}
+
+.logo {
+  max-width: 220px;
+  display: block;
+}
+
+.host h4,
+.partner h4 {
+  color: #ef6b1d;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.host a {
+  color: #45656b;
+  text-decoration: underline;
+}
+
+.socials {
+  margin-top: .8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.socials a {
+  color: #1b5cb8;
+  font-size: 1.6rem;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.eu-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.eu-footer small {
+  font-size: .72rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.eu-footer img {
+  width: 220px;
+}
+
+/* RIGHT */
+
+.mih-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mih-gallery img {
+  width: 80%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Responsive */
+
+.socials-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -109,7 +109,7 @@ const ProjectRecapSection = () => {
           meaningful connections and memorable moments shared by participants throughout the mobility.
         </div>
       </div>
-      <div className="project-recap-image-placeholder">This will be an image div in the css coming soon img</div>
+      <div className="project-recap-image-placeholder"></div>
     </section>
   );
 };
@@ -154,5 +154,113 @@ const GuideBookSection = () => {
 };
 
 const MakeItHappendSection = () => {
-  return <section className="page-section make-it-happend-section"></section>;
+  return (
+    <section className="page-section make-it-happend-section">
+      <div className="container">
+        <h2 className="section-title">Together we made it happen</h2>
+
+        <div className="mih-grid">
+          {/* Left */}
+          <div className="mih-illustration">
+            <img src="/logos/toma.png" alt="Illustration" />
+          </div>
+
+          {/* Center */}
+          <div className="mih-content">
+            <div className="host">
+              <h3>Host organisation</h3>
+
+              <div className="socials-container">
+                <img className="logo" src="/logos/smart_logo.png" alt="SMART" />
+                <div className="">
+                  <h4>Asociația S.M.A.R.T.</h4>
+
+                  <a href="https://smartassociation.ro/" target="_blank" rel="noreferrer">
+                    https://smartassociation.ro/
+                  </a>
+                </div>
+
+                <div className="socials">
+                  <a href="#">
+                    <i className="fab fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="partners">
+              <h3>Partners</h3>
+
+              <div className="partner">
+                <div className="socials-container">
+                  <img className="logo" src="/logos/novoMundoLogo.jpeg" alt="Novo Mundo" />
+
+                  <h4>Novo Mundo</h4>
+
+                  <div className="socials">
+                    <a href="#">
+                      <i className="fab fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="partner">
+                <h4>Green Lives</h4>
+
+                <div className="socials">
+                  <a href="#">
+                    <i className="fab fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div className="partner">
+                <h4>
+                  Samandağ Gastronomi
+                  <br />
+                  Turizm ve Kültür Derneği
+                </h4>
+
+                <div className="socials">
+                  <a href="#">
+                    <i className="fab fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="eu-footer">
+              <small>
+                Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not
+                necessarily reflect those of the European Union or the National Agency for Community Programs in the Field of
+                Education and Vocational Training.
+              </small>
+
+              <img src="/logos/UE_LOGO.png" alt="EU" />
+            </div>
+          </div>
+
+          {/* Right */}
+          <div className="mih-gallery">
+            <img src="/logos/grup_provocari.png" alt="" />
+            <img src="/logos/grup2.png" alt="" />
+            <img src="/logos/grup_diploma.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
