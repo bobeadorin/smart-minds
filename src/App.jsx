@@ -172,21 +172,23 @@ const MakeItHappendSection = () => {
 
               <div className="socials-container">
                 <img className="logo" src="/logos/smart_logo.png" alt="SMART" />
-                <div className="">
-                  <h4>Asociația S.M.A.R.T.</h4>
+                <div>
+                  <div className="">
+                    <h4>Asociația S.M.A.R.T.</h4>
 
-                  <a href="https://smartassociation.ro/" target="_blank" rel="noreferrer">
-                    https://smartassociation.ro/
-                  </a>
-                </div>
+                    <a href="https://smartassociation.ro/" target="_blank" rel="noreferrer">
+                      https://smartassociation.ro/
+                    </a>
+                  </div>
 
-                <div className="socials">
-                  <a href="#">
-                    <i className="fab fa-facebook"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram"></i>
-                  </a>
+                  <div className="socials">
+                    <a href="https://www.facebook.com/people/Asocia%C8%9Bia-SMART/61556478462754/">
+                      <img src="/logos/facebookLogo.svg" alt="" />
+                    </a>
+                    <a href="https://www.instagram.com/asociatiasmart/">
+                      <img src="/logos/instagramLogo.svg" alt="" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -197,51 +199,56 @@ const MakeItHappendSection = () => {
               <div className="partner">
                 <div className="socials-container">
                   <img className="logo" src="/logos/novoMundoLogo.jpeg" alt="Novo Mundo" />
+                  <div>
+                    <h4>Novo Mundo</h4>
 
-                  <h4>Novo Mundo</h4>
-
-                  <div className="socials">
-                    <a href="#">
-                      <i className="fab fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram"></i>
-                    </a>
+                    <div className="socials">
+                      <a href="https://www.facebook.com/wearenovomundo">
+                        <img src="/logos/facebookLogo.svg" alt="" />
+                      </a>
+                      <a href="https://www.instagram.com/weare_novomundo/">
+                        <img src="/logos/instagramLogo.svg" alt="" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div className="partner">
-                <h4>Green Lives</h4>
+                <div className="socials-container">
+                  <img className="logo" src="/logos/greenLivesLogo.png" alt="" />
 
-                <div className="socials">
-                  <a href="#">
-                    <i className="fab fa-facebook"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram"></i>
-                  </a>
+                  <div>
+                    <h4>Green Lives</h4>
+
+                    <div className="socials">
+                      <a href="https://www.facebook.com/share/1J3ejaGbkF/">
+                        <img src="/logos/facebookLogo.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div className="partner">
-                <h4>
-                  Samandağ Gastronomi
-                  <br />
-                  Turizm ve Kültür Derneği
-                </h4>
+                <div>
+                  <h4>
+                    Samandağ Gastronomi
+                    <br />
+                    Turizm ve Kültür Derneği
+                  </h4>
 
-                <div className="socials">
-                  <a href="#">
-                    <i className="fab fa-facebook"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram"></i>
-                  </a>
+                  <div className="socials-bottom">
+                    <a href="#">
+                      <img src="/logos/facebookLogo.svg" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="/logos/instagramLogo.svg" alt="" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-
             <div className="eu-footer">
               <small>
                 Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not
@@ -249,7 +256,7 @@ const MakeItHappendSection = () => {
                 Education and Vocational Training.
               </small>
 
-              <img src="/logos/UE_LOGO.png" alt="EU" />
+              <img src="/logos/UE_LOGO.png" alt="EU" className="euLogo" />
             </div>
           </div>
 

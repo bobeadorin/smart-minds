@@ -1,7 +1,51 @@
+:root {
+  --color-primary: #436d72;
+  --color-secondary: #ff751f;
+  --color-accent: #1b5cb8;
+  --color-muted: #45656b;
+  --color-white: #ffffff;
+  --color-bg-light: #f8f8f8;
+  --color-text: #436d72;
+  --bg-hero: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 95%), url("/logos/fundal1.png");
+  --bg-objectives-image: url("/logos/meditatie.png");
+  --bg-project-placeholder: url("/logos/comingSoonPlaceholder.jpeg");
+  --font-size-hero-title: 5.5rem;
+  --font-size-hero-subtitle: 2.5rem;
+  --font-size-section-title: 3rem;
+  --font-size-recap-title: 4rem;
+  --font-size-recap-content: 2rem;
+  --font-size-body: 1.4rem;
+  --font-size-body-large: 1.8rem;
+  --font-size-link: 1.2rem;
+  --font-size-h3: 2rem;
+  --font-size-social: 1.6rem;
+  --font-size-footer-small: 0.72rem;
+  --line-height-default: 1.5;
+  --gap-default: 3rem;
+  --space-xl: 5rem;
+  --space-l: 3rem;
+  --space-m: 2rem;
+  --space-s: 1rem;
+  --space-xs: 0.8rem;
+  --radius-large: 60px;
+  --radius-medium: 8px;
+  --hero-image-width: 30rem;
+  --hero-image-height: 30rem;
+  --objectives-image-width: 30rem;
+  --objectives-image-height: 15rem;
+  --guide-book-image-width: 25rem;
+  --guide-book-image-height: 35rem;
+  --guide-book-link-height: 4rem;
+  --objectives-circle-size: 7rem;
+  --eu-logo-height: 10rem;
+  --gallery-image-width: 70%;
+  --project-image-height: 90%;
+}
+
 .hero-section {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 95%), url("/logos/fundal1.png");
+  background-image: var(--bg-hero);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,62 +54,61 @@
   width: 100%;
   height: 100vh;
   /* border-bottom: 10px solid black; */
-  padding: 5rem;
+  padding: var(--space-xl);
 }
 
 .hero-content {
-  color: white;
+  color: var(--color-white);
   position: relative;
-
-  top: 5rem;
+  top: var(--space-xl);
   left: 8rem;
 }
 
 .hero-title {
-  font-size: 5.5rem;
-  margin-bottom: 2rem;
+  font-size: var(--font-size-hero-title);
+  margin-bottom: var(--space-m);
 }
 
 .hero-subtitle {
-  font-size: 2.5rem;
+  font-size: var(--font-size-hero-subtitle);
   font-weight: lighter;
 }
 
 .hero-image {
-  width: 30rem;
-  height: 30rem;
+  width: var(--hero-image-width);
+  height: var(--hero-image-height);
   position: relative;
   top: 43vh;
   left: 5vw;
 }
 
 .about-objectives-section {
-  background-color: white;
-  color: #436d72;
+  background-color: var(--color-white);
+  color: var(--color-primary);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
-  line-height: 1.5;
+  gap: var(--gap-default);
+  line-height: var(--line-height-default);
 }
 
 .about-objectives-title {
   width: 100%;
   text-align: left;
-  font-size: 3rem;
+  font-size: var(--font-size-section-title);
 }
 
 .about-objectives-content {
   width: 50%;
   height: 100%;
   /* padding-left:2rem; */
-  padding-right: 2rem;
+  padding-right: var(--space-m);
 }
 
 .about-objectives-content-text {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  font-size: 1.4rem;
+  margin-bottom: var(--space-m);
+  margin-top: var(--space-m);
+  font-size: var(--font-size-body);
   text-align: justify;
 }
 
@@ -82,21 +125,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: var(--font-size-body);
 }
 
 .objectives-content-row-number {
-  width: 7rem;
-  height: 7rem;
+  width: var(--objectives-circle-size);
+  height: var(--objectives-circle-size);
 }
 .objectives-content-row-content {
-  font-size: 1.4rem;
+  font-size: var(--font-size-body);
   text-align: justify;
 }
 .objectives-image {
-  width: 30rem;
-  height: 15rem;
-  background-image: url("/logos/meditatie.png");
+  width: var(--objectives-image-width);
+  height: var(--objectives-image-height);
+  background-image: var(--bg-objectives-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -104,15 +147,15 @@
 
 .objectives-title {
   text-align: center;
-  font-size: 3rem;
-  background-color: #436d72;
-  color: white;
-  border-radius: 60px;
+  font-size: var(--font-size-section-title);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--radius-large);
   width: 80%;
 }
 
-.project-recap-section{
-  background: #f8f8f8;
+.project-recap-section {
+  background: var(--color-bg-light);
 }
 .objectives-image-container {
   width: 100%;
@@ -123,27 +166,30 @@
 
 .project-recap-inner {
   width: 100%;
-  color: #ff751f;
+  color: var(--color-secondary);
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-m);
+  margin-bottom: var(--space-m);
 }
 
 .project-recap-title {
-  font-size: 4rem;
+  font-size: var(--font-size-recap-title);
   width: 40%;
 }
 
 .project-recap-content {
-  font-size: 2rem;
+  font-size: var(--font-size-recap-content);
   width: 100%;
   font-style: italic;
 }
 
 .project-recap-image-placeholder {
   width: 100%;
-  height: 90%;
-  background-image: url("/logos/comingSoonPlaceholder.jpeg");
+  height: var(--project-image-height);
+  background-image: var(--bg-project-placeholder);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -152,46 +198,46 @@
 .guide-book-section {
   display: flex;
   justify-content: space-between;
-  line-height: 1.5;
+  line-height: var(--line-height-default);
   /* align-items: center; */
 }
 
 .guide-book-intro {
-  margin-bottom: 3rem;
+  margin-bottom: var(--space-l);
 }
 
 .guide-book-title {
-  font-size: 3rem;
-  color: #ff751f;
-  margin-bottom: 2rem;
+  font-size: var(--font-size-section-title);
+  color: var(--color-secondary);
+  margin-bottom: var(--space-m);
 }
 
 .guide-book-discovery-title {
-  color: #ff751f;
-  font-size:2rem;
+  color: var(--color-secondary);
+  font-size: 2rem;
 }
 
 .guide-book-description {
-  font-size: 1.8rem;
+  font-size: var(--font-size-body-large);
   width: 85%;
-   text-align: justify;
+  text-align: justify;
 }
 
 .guide-book-list-item {
-  font-size: 1.8rem;
+  font-size: var(--font-size-body-large);
   text-align: justify;
 }
 
 b {
-  color: #ff751f;
+  color: var(--color-secondary);
 }
 
 .guide-book-container {
   width: 70%;
 }
 
-.guide-book-list{
-  padding-left:2rem;
+.guide-book-list {
+  padding-left: var(--space-m);
 }
 
 .guide-book-action-container {
@@ -200,40 +246,38 @@ b {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--space-m);
 }
 .guide-book-image {
-  width: 25rem;
-  height: 35rem;
+  width: var(--guide-book-image-width);
+  height: var(--guide-book-image-height);
   border: 1px solid black;
-  margin-bottom:1rem;
+  margin-bottom: var(--space-s);
 }
 
 .guide-book-link-container {
-  background-color: #436d72;
-  width: 25rem;
-  height: 4rem;
-  display:flex;
+  background-color: var(--color-primary);
+  width: var(--guide-book-image-width);
+  height: var(--guide-book-link-height);
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .guide-book-link {
-  font-size: 1.2rem;
+  font-size: var(--font-size-link);
   font-weight: bold;
-  color: white;
+  color: var(--color-white);
 }
-
 
 .make-it-happend-section {
   /* padding: 80px 0; */
-  background: #f8f8f8;
+  background: var(--color-bg-light);
 }
 
-
 .section-title {
-  font-size: 3rem;
-  color: #45656b;
+  font-size: var(--font-size-section-title);
+  color: var(--color-muted);
   margin-bottom: 2.5rem;
   font-weight: 700;
 }
@@ -241,16 +285,27 @@ b {
 .mih-grid {
   display: grid;
   grid-template-columns: 1fr 1.35fr 1fr;
-  gap: 3rem;
+  gap: var(--gap-default);
   align-items: start;
 }
 
 /* LEFT */
 
+.mih-illustration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .mih-illustration img {
   width: 100%;
-  display: block;
+  display: flex;
   border-radius: 8px;
+}
+
+.euLogo {
+  height: 10rem;
 }
 
 /* CENTER */
@@ -262,13 +317,14 @@ b {
 
 .host,
 .partner {
-  text-align: center;
+  text-align: right;
 }
 
 .host h3,
 .partners h3 {
-  color: #45656b;
-  font-size: 2rem;
+  text-align: right;
+  color: var(--color-muted);
+  font-size: var(--font-size-h3);
 }
 
 .logo {
@@ -278,48 +334,444 @@ b {
 
 .host h4,
 .partner h4 {
-  color: #ef6b1d;
-  font-size: 2rem;
-  margin-bottom: .5rem;
+  color: var(--color-secondary);
+  font-size: var(--font-size-h3);
+  margin-bottom: var(--space-xs);
 }
 
 .host a {
-  color: #45656b;
+  color: var(--color-muted);
   text-decoration: underline;
 }
 
 .socials {
-  margin-top: .8rem;
+  margin-top: var(--space-xs);
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .socials a {
-  color: #1b5cb8;
-  font-size: 1.6rem;
+  color: var(--color-accent);
+  font-size: var(--font-size-social);
 }
 
 .partners {
   display: flex;
   flex-direction: column;
-
 }
 
 .eu-footer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  gap: 2rem;
+  align-items: center;
+  gap: var(--space-m);
 }
 
 .eu-footer small {
-  font-size: .72rem;
+  font-size: var(--font-size-footer-small);
   color: #555;
-  line-height: 1.5;
+  line-height: var(--line-height-default);
 }
 
 .eu-footer img {
   width: 220px;
+}
+
+@media (max-width: 1600px) {
+  .hero-section {
+    background-position: top center;
+  }
+
+  .page-section {
+    padding: 4rem;
+  }
+
+  .hero-content {
+    left: 2rem;
+    top: 4rem;
+    width: calc(100% - 4rem);
+  }
+
+  .hero-title {
+    font-size: 5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2.3rem;
+  }
+
+  .hero-image {
+    width: 26rem;
+    height: 26rem;
+    top: 40vh;
+    left: 5vw;
+  }
+
+  .about-objectives-section,
+  .guide-book-section,
+  .objectives-image-container,
+  .eu-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-objectives-content,
+  .guide-book-container,
+  .guide-book-action-container {
+    width: 100%;
+  }
+
+  .guide-book-title {
+    font-size: 2.8rem;
+  }
+
+  .guide-book-discovery-title {
+    font-size: 2rem;
+  }
+
+  .guide-book-description,
+  .guide-book-list-item,
+  .project-recap-content,
+  .objectives-content-row-content {
+    font-size: 1.7rem;
+  }
+
+  .project-recap-title {
+    font-size: 3.6rem;
+    width: 100%;
+  }
+
+  .objectives-title {
+    font-size: 2.8rem;
+  }
+
+  .mih-grid {
+    gap: var(--space-m);
+  }
+
+  .eu-footer img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page-section {
+    padding: 3rem;
+    height: auto;
+  }
+
+  .hero-content {
+    left: 1.5rem;
+    top: 3.5rem;
+    width: calc(100% - 3rem);
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 1.9rem;
+  }
+
+  .hero-image {
+    width: 22rem;
+    height: 22rem;
+    top: 34vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about-objectives-section,
+  .guide-book-section,
+  .objectives-image-container,
+  .project-recap-section,
+  .eu-footer,
+  .socials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-m);
+  }
+
+  .about-objectives-content,
+  .guide-book-container,
+  .guide-book-action-container,
+  .objectives-container,
+  .project-recap-image-placeholder {
+    width: 100%;
+  }
+
+  .about-objectives-title,
+  .project-recap-title,
+  .objectives-title {
+    width: 100%;
+  }
+
+  .guide-book-link-container {
+    width: 100%;
+  }
+
+  .guide-book-image {
+    min-height: 20rem;
+    width: 100%;
+  }
+
+  .project-recap-image-placeholder {
+    min-height: 20rem;
+  }
+
+  .guide-book-list {
+    padding-left: var(--space-s);
+    width: 100%;
+  }
+
+  .project-recap-title {
+    font-size: 2.8rem;
+  }
+
+  .project-recap-content,
+  .guide-book-description,
+  .guide-book-list-item,
+  .objectives-content-row-content,
+  .about-objectives-content-text {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2.4rem;
+  }
+
+  .mih-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-l);
+  }
+
+  .mih-illustration img,
+  .mih-gallery img {
+    width: 100%;
+  }
+
+  .logo {
+    max-width: 180px;
+  }
+
+  .euLogo {
+    height: 8rem;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .socials a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-section {
+    padding: 2rem;
+    height: auto;
+  }
+
+  .hero-content {
+    left: 1rem;
+    top: 3rem;
+    width: calc(100% - 2rem);
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .hero-image {
+    width: 18rem;
+    height: 18rem;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about-objectives-section,
+  .guide-book-section,
+  .objectives-image-container,
+  .project-recap-section,
+  .eu-footer,
+  .socials-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-s);
+  }
+
+  .about-objectives-content,
+  .guide-book-container,
+  .guide-book-action-container,
+  .objectives-container,
+  .project-recap-image-placeholder {
+    width: 100%;
+  }
+
+  .guide-book-intro {
+    margin-bottom: var(--space-l);
+    width: 100%;
+  }
+  .guide-book-description{
+    width: 100%;
+  }
+  .guide-book-list{
+    width: 100%;
+  }
+
+
+  .about-objectives-title,
+  .project-recap-title,
+  .objectives-title {
+    width: 100%;
+  }
+
+  .guide-book-title {
+    font-size: 2rem;
+  }
+
+  .guide-book-discovery-title {
+    font-size: 1.5rem;
+  }
+
+  .guide-book-description,
+  .guide-book-list-item,
+  .project-recap-content,
+  .objectives-content-row-content,
+  .about-objectives-content-text {
+    font-size: 1.2rem;
+  }
+
+  .project-recap-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .guide-book-image {
+    min-height: 16rem;
+    width: 100%;
+  }
+
+  .guide-book-link-container {
+    width: 100%;
+    padding: 0 var(--space-s);
+  }
+
+  .eu-footer {
+    flex-direction: column;
+    gap: var(--space-s);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    top: 2.5rem;
+    left: 1rem;
+    width: calc(100% - 2rem);
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-image {
+    width: 13rem;
+    height: 13rem;
+    top: 24vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .page-section {
+    padding: 1.5rem;
+    height: auto;
+  }
+
+  .about-objectives-section,
+  .guide-book-section,
+  .objectives-image-container,
+  .project-recap-section,
+  .eu-footer,
+  .socials-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-s);
+  }
+
+  .about-objectives-content,
+  .guide-book-container,
+  .guide-book-action-container,
+  .objectives-container,
+  .project-recap-image-placeholder {
+    width: 100%;
+  }
+
+  .about-objectives-title,
+  .project-recap-title,
+  .objectives-title {
+    width: 100%;
+  }
+
+  .guide-book-title {
+    font-size: 1.8rem;
+  }
+
+  .guide-book-discovery-title {
+    font-size: 1.3rem;
+  }
+
+  .guide-book-description,
+  .guide-book-list-item,
+  .project-recap-content,
+  .objectives-content-row-content,
+  .about-objectives-content-text {
+    font-size: 1rem;
+  }
+
+  .project-recap-title {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .guide-book-image {
+    min-height: 14rem;
+    width: 100%;
+  }
+
+  .guide-book-link-container {
+    width: 100%;
+    padding: 0 var(--space-s);
+  }
+
+  .eu-footer img {
+    width: 140px;
+  }
 }
 
 /* RIGHT */
@@ -327,19 +779,24 @@ b {
 .mih-gallery {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
 }
 
 .mih-gallery img {
-  width: 80%;
+  width: var(--gallery-image-width);
   display: block;
-  border-radius: 8px;
+  border-radius: var(--radius-medium);
 }
 
 /* Responsive */
 
-.socials-container{
-  display:flex;
-  justify-content: center;
+.socials-container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.socials-container h4 {
+  text-align: right;
 }
