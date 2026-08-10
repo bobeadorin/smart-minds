@@ -42,6 +42,21 @@
   --project-image-height: 90%;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 .hero-section {
   width: 100%;
   height: 100vh;
@@ -484,6 +499,7 @@ b {
     transform: translateX(-50%);
   }
 
+
   .about-objectives-section,
   .guide-book-section,
   .objectives-image-container,
@@ -503,6 +519,11 @@ b {
   .objectives-container,
   .project-recap-image-placeholder {
     width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    padding: 0;
   }
 
   .about-objectives-title,
@@ -512,11 +533,6 @@ b {
   }
 
   .guide-book-link-container {
-    width: 100%;
-  }
-
-  .guide-book-image {
-    min-height: 20rem;
     width: 100%;
   }
 
@@ -569,7 +585,64 @@ b {
 
   .socials a {
     font-size: 1.4rem;
+}
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
   }
+
+  .host {
+    border-top: 2px solid black;
+
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+  }
+
+  .host > h3 {
+    text-align: center;
+  }
+  .socials-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .last-partner-title {
+    text-align: center;
+  }
+
+    .objectives-content-container {
+    margin-bottom: 1rem;
+  }
+
+
+    .objectives-content-row-number {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .guide-book-intro {
+    margin-bottom: var(--space-l);
+    width: 100%;
+  }
+  .guide-book-description {
+    width: 100%;
+  }
+  .guide-book-list {
+    width: 100%;
+  }
+
+  .about-objectives-title,
+  .project-recap-title,
+  .objectives-title {
+    width: 100%;
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -622,22 +695,27 @@ b {
     width: 100%;
   }
 
+  .objectives-content-row-number {
+    width: 5rem;
+    height: 5rem;
+  }
+
   .guide-book-intro {
     margin-bottom: var(--space-l);
     width: 100%;
   }
-  .guide-book-description{
+  .guide-book-description {
     width: 100%;
   }
-  .guide-book-list{
+  .guide-book-list {
     width: 100%;
   }
-
 
   .about-objectives-title,
   .project-recap-title,
   .objectives-title {
     width: 100%;
+    text-align: center;
   }
 
   .guide-book-title {
@@ -667,6 +745,8 @@ b {
   .guide-book-image {
     min-height: 16rem;
     width: 100%;
+
+
   }
 
   .guide-book-link-container {
@@ -678,6 +758,35 @@ b {
     flex-direction: column;
     gap: var(--space-s);
   }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+  }
+
+  .host {
+    border-top: 2px solid black;
+
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+  }
+
+  .host > h3 {
+    text-align: center;
+  }
+  .socials-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .last-partner-title {
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -727,12 +836,22 @@ b {
   .objectives-container,
   .project-recap-image-placeholder {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
   }
 
   .about-objectives-title,
   .project-recap-title,
   .objectives-title {
     width: 100%;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .objectives-content-container {
+    margin-bottom: 1rem;
   }
 
   .guide-book-title {
@@ -762,6 +881,7 @@ b {
   .guide-book-image {
     min-height: 14rem;
     width: 100%;
+
   }
 
   .guide-book-link-container {

@@ -232,7 +232,7 @@ const MakeItHappendSection = () => {
 
               <div className="partner">
                 <div>
-                  <h4>
+                  <h4 className="last-partner-title">
                     Samandağ Gastronomi
                     <br />
                     Turizm ve Kültür Derneği
