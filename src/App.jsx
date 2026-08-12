@@ -92,7 +92,7 @@ const AboutObjectivesSection = () => {
         </div>
         <div className="objectives-image-container">
           <div className="objectives-image" src="/logos/meditatie.png" alt="" />
-          <div className="objectives-image" src="/logos/meditatie.png" alt="" />
+          <div className="objectives-second-image" src="/logos/logoGrupMainileSus.jpeg" alt="" />
         </div>
       </div>
     </section>

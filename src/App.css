@@ -7,7 +7,11 @@
   --color-bg-light: #f8f8f8;
   --color-text: #436d72;
   --bg-hero: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 95%), url("/logos/fundal1.png");
+  --bg-hero-small: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 105%), url("/logos/fundal1.png");
+
   --bg-objectives-image: url("/logos/meditatie.png");
+  --bg-objectives-second-image: url("/logos/logoGrupMainileSus.jpeg");
+
   --bg-project-placeholder: url("/logos/comingSoonPlaceholder.jpeg");
   --font-size-hero-title: 5.5rem;
   --font-size-hero-subtitle: 2.5rem;
@@ -59,7 +63,7 @@ body {
 
 .hero-section {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: var(--bg-hero);
   background-repeat: no-repeat;
   background-position: center;
@@ -159,6 +163,14 @@ body {
   background-position: center;
   background-size: cover;
 }
+.objectives-second-image {
+  width: var(--objectives-image-width);
+  height: var(--objectives-image-height);
+  background-image: var(--bg-objectives-second-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .objectives-title {
   text-align: center;
@@ -184,7 +196,7 @@ body {
   color: var(--color-secondary);
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   gap: var(--space-m);
   margin-bottom: var(--space-m);
@@ -392,34 +404,42 @@ b {
   width: 220px;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1800px) {
   .hero-section {
     background-position: top center;
+    background-image:var(--bg-hero-small) ;
   }
 
   .page-section {
     padding: 4rem;
+    height: auto;
   }
 
   .hero-content {
     left: 2rem;
     top: 4rem;
-    width: calc(100% - 4rem);
+    width: min(90%, 760px);
+    max-width: 760px;
   }
 
   .hero-title {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   .hero-subtitle {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
+  }
+
+  .objectives-title {
+    margin-bottom: 2rem;
   }
 
   .hero-image {
-    width: 26rem;
-    height: 26rem;
-    top: 40vh;
-    left: 5vw;
+    width: 22rem;
+    height: 22rem;
+    top:67vh;
+    left: 50vh;
+    transform: translateX(-50%);
   }
 
   .about-objectives-section,
@@ -429,36 +449,49 @@ b {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: var(--space-m);
   }
 
   .about-objectives-content,
   .guide-book-container,
-  .guide-book-action-container {
+  .guide-book-action-container,
+  .objectives-container,
+  .project-recap-image-placeholder {
     width: 100%;
+    /* height: 100%; */
+  }
+
+  .about-objectives-content {
+    padding-right: 0;
   }
 
   .guide-book-title {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 
   .guide-book-discovery-title {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .guide-book-description,
   .guide-book-list-item,
   .project-recap-content,
   .objectives-content-row-content {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   .project-recap-title {
-    font-size: 3.6rem;
+    font-size: 3.4rem;
     width: 100%;
   }
 
   .objectives-title {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
+  }
+
+  .objectives-image {
+    width: 22rem;
+    height: 12rem;
   }
 
   .mih-grid {
@@ -482,6 +515,17 @@ b {
     width: calc(100% - 3rem);
   }
 
+  .project-recap-inner {
+    width: 100%;
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-m);
+    margin-bottom: var(--space-m);
+  }
+
   .hero-title {
     font-size: 4rem;
     line-height: 1.1;
@@ -494,11 +538,9 @@ b {
   .hero-image {
     width: 22rem;
     height: 22rem;
-    top: 34vh;
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%);
   }
-
 
   .about-objectives-section,
   .guide-book-section,
@@ -519,9 +561,9 @@ b {
   .objectives-container,
   .project-recap-image-placeholder {
     width: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     flex-direction: column;
     padding: 0;
   }
@@ -585,21 +627,22 @@ b {
 
   .socials a {
     font-size: 1.4rem;
-}
+  }
 
   .partners {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid black;
+    gap: var(--space-s);
     margin-bottom: 1rem;
   }
 
   .host {
     border-top: 2px solid black;
-
     border-bottom: 2px solid black;
+    padding: var(--space-s) 0;
     margin-bottom: 1rem;
+    width: 100%;
   }
 
   .host > h3 {
@@ -609,18 +652,22 @@ b {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: var(--space-s);
   }
 
   .last-partner-title {
     text-align: center;
   }
 
-    .objectives-content-container {
+  .objectives-content-container {
     margin-bottom: 1rem;
+    width: 100%;
   }
 
-
-    .objectives-content-row-number {
+  .objectives-title {
+    margin-bottom: 2rem;
+  }
+  .objectives-content-row-number {
     width: 5rem;
     height: 5rem;
   }
@@ -642,7 +689,6 @@ b {
     width: 100%;
     text-align: center;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -670,8 +716,7 @@ b {
   .hero-image {
     width: 18rem;
     height: 18rem;
-    top: 30vh;
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%);
   }
 
@@ -745,8 +790,6 @@ b {
   .guide-book-image {
     min-height: 16rem;
     width: 100%;
-
-
   }
 
   .guide-book-link-container {
@@ -786,7 +829,6 @@ b {
   .last-partner-title {
     text-align: center;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -808,8 +850,7 @@ b {
   .hero-image {
     width: 13rem;
     height: 13rem;
-    top: 24vh;
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
   }
 
@@ -881,7 +922,6 @@ b {
   .guide-book-image {
     min-height: 14rem;
     width: 100%;
-
   }
 
   .guide-book-link-container {
