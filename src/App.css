@@ -493,6 +493,11 @@ b {
     width: 22rem;
     height: 12rem;
   }
+  .objectives-second-image {
+    width: 22rem;
+    height: 12rem;
+    background-image: var(--bg-objectives-second-image);
+  }
 
   .mih-grid {
     gap: var(--space-m);
