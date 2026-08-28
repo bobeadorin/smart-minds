@@ -248,11 +248,13 @@ body {
   font-size: var(--font-size-body-large);
   width: 85%;
   text-align: justify;
+  color: var(--color-text);
 }
 
 .guide-book-list-item {
   font-size: var(--font-size-body-large);
   text-align: justify;
+  color: var(--color-text);
 }
 
 b {
@@ -299,7 +301,7 @@ b {
 
 .make-it-happend-section {
   /* padding: 80px 0; */
-  background: var(--color-bg-light);
+  background: var(--color-white);
 }
 
 .section-title {
@@ -404,10 +406,55 @@ b {
   width: 220px;
 }
 
+.therapist-questions-section {
+  background: var(--color-bg-light);
+}
+
+.therapist-questions-title {
+  font-size: 2.8rem;
+  line-height: 1.15;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+}
+
+.therpist-questions-pannel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.question-title {
+  color: var(--color-secondary);
+  font-size: 1.35rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+.question-text {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+  line-height: var(--line-height-default);
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+.therapist-questions-left-pannel {
+  flex: 1;
+}
+.therapist-questions-right-pannel {
+  flex: 1;
+}
+
+.therapist-question-warning {
+  color: var(--color-secondary);
+  font-size: 0.95rem;
+  line-height: var(--line-height-default);
+}
+
 @media (max-width: 1800px) {
   .hero-section {
     background-position: top center;
-    background-image:var(--bg-hero-small) ;
+    background-image: var(--bg-hero-small);
   }
 
   .page-section {
@@ -437,7 +484,7 @@ b {
   .hero-image {
     width: 22rem;
     height: 22rem;
-    top:67vh;
+    top: 67vh;
     left: 50vh;
     transform: translateX(-50%);
   }
@@ -531,6 +578,16 @@ b {
     margin-bottom: var(--space-m);
   }
 
+  .therpist-questions-pannel-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .therapist-questions-left-pannel,
+  .therapist-questions-right-pannel {
+    width: 100%;
+  }
+
   .hero-title {
     font-size: 4rem;
     line-height: 1.1;
@@ -606,6 +663,22 @@ b {
 
   .section-title {
     font-size: 2.4rem;
+  }
+
+  .therapist-questions-title {
+    font-size: 2.4rem;
+  }
+
+  .question-title {
+    font-size: 1.2rem;
+  }
+
+  .question-text {
+    font-size: 1rem;
+  }
+
+  .therapist-question-warning {
+    font-size: 0.85rem;
   }
 
   .mih-grid {
@@ -792,6 +865,22 @@ b {
     font-size: 1.9rem;
   }
 
+  .therapist-questions-title {
+    font-size: 2rem;
+  }
+
+  .question-title {
+    font-size: 1.1rem;
+  }
+
+  .question-text {
+    font-size: 0.95rem;
+  }
+
+  .therapist-question-warning {
+    font-size: 0.8rem;
+  }
+
   .guide-book-image {
     min-height: 16rem;
     width: 100%;
@@ -922,6 +1011,22 @@ b {
 
   .section-title {
     font-size: 1.6rem;
+  }
+
+  .therapist-questions-title {
+    font-size: 1.6rem;
+  }
+
+  .question-title {
+    font-size: 1rem;
+  }
+
+  .question-text {
+    font-size: 0.9rem;
+  }
+
+  .therapist-question-warning {
+    font-size: 0.78rem;
   }
 
   .guide-book-image {

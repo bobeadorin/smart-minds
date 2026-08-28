@@ -7,6 +7,7 @@ export default function App() {
       <AboutObjectivesSection />
       <ProjectRecapSection />
       <GuideBookSection />
+      <TherapistQuestionsSection />
       <MakeItHappendSection />
     </section>
   );
@@ -148,6 +149,92 @@ const GuideBookSection = () => {
             Read the guide
           </a>
         </div>
+      </div>
+    </section>
+  );
+};
+
+const TherapistQuestionsSection = () => {
+  return (
+    <section className="page-section therapist-questions-section">
+      <h2 className="therapist-questions-title">Questions we asked a therapist</h2>
+      <div className="therpist-questions-pannel-container">
+        <div className="therapist-questions-left-pannel">
+          <div>
+            <h3 className="question-title">1. What are some simple ways to take care of your mental health on a daily basis?</h3>
+            <p className="question-text">
+              Taking care of your mental health does not have to mean making big changes. Regular sleep, movement, spending time
+              with people you trust, taking breaks, expressing your emotions, doing activities you enjoy and allowing yourself
+              time to rest can all contribute to emotional well-being.
+            </p>
+          </div>
+          <div>
+            <h3 className="question-title">
+              2. Why might we temporarily lose interest in our partner, even when we still care about them?
+            </h3>
+            <p className="question-text">
+              Feelings and relationships naturally change over time. Stress, emotional exhaustion, personal difficulties, routine
+              or a need for personal space can sometimes affect how connected we feel to our partner. A temporary change in
+              interest does not necessarily mean that the relationship is over. Honest communication and understanding what is
+              happening within yourself can be an important first step.
+            </p>
+          </div>
+          <div>
+            <h3 className="question-title">3. How can you become more comfortable with speaking in public?</h3>
+            <p className="question-text">
+              Public speaking becomes easier with practice. Start with small situations, prepare your main ideas rather than
+              memorising every word, practise aloud and focus on communicating your message instead of trying to appear perfect.
+              Feeling nervous is normal — confidence usually comes from doing something repeatedly, not from waiting until you
+              feel completely confident.
+            </p>
+          </div>
+        </div>
+
+        <div className="therapist-questions-right-pannel">
+          <div>
+            <h3 className="question-title">4. How can you cope with anxiety in everyday life?</h3>
+            <p className="question-text">
+              Start by noticing what triggers your anxiety and how it shows up in your body and thoughts. Slow breathing,
+              grounding techniques, physical activity, journaling and taking short breaks can help regulate stress in the moment.
+              It is also important to maintain routines that support your well-being and talk to someone you trust when anxiety
+              becomes difficult to manage.
+            </p>
+          </div>
+          <div>
+            <h3 className="question-title">5. How can you accept a loss and begin moving forward?</h3>
+            <p className="question-text">
+              There is no fixed timeline for grief. Allowing yourself to feel sadness, anger or confusion is part of processing a
+              loss. Instead of forcing yourself to “move on”, focus on taking small steps forward while keeping space for your
+              emotions. Talking to someone you trust, maintaining daily routines and seeking professional support when needed can
+              make the process easier.
+            </p>
+          </div>
+          <div>
+            <h3 className="question-title">6. How can you become more confident in yourself?</h3>
+            <p className="question-text">
+              Confidence grows through experience. Set small, realistic goals, recognise your progress and allow yourself to make
+              mistakes without treating them as proof that you are not good enough. Learning to speak to yourself with the same
+              kindness you would offer a friend can also help build a healthier sense of self-confidence.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p className="therapist-question-warning">
+        These answers are intended for educational purposes and are not a substitute for professional mental health support. If
+        you are struggling or feel that your mental health is affecting your daily life, consider reaching out to a qualified
+        professional.
+      </p>
+    </section>
+  );
+};
+
+const ParticipantsTestimonialsSection = () => {
+  return (
+    <section className="page-section participants-testimonials-section">
+      <h1>Participants testimonials</h1>
+      <div>
+        <img src="" alt="" />
       </div>
     </section>
   );
