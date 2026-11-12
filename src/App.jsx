@@ -112,7 +112,7 @@ const ProjectRecapSection = () => {
         </div>
       </div>
 
-      <a className="project-recap-link" href="https://google.com">
+      <a className="project-recap-link" href="https://www.youtube.com/watch?v=8a7tsqxc9b8">
         <img
           className="project-recap-image"
           src="/logos/projectRecapVidLogo.jpeg"
