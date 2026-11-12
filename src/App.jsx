@@ -8,6 +8,7 @@ export default function App() {
       <ProjectRecapSection />
       <GuideBookSection />
       <TherapistQuestionsSection />
+      <ParticipantsTestimonialsSection/>
       <MakeItHappendSection />
     </section>
   );
@@ -110,7 +111,14 @@ const ProjectRecapSection = () => {
           meaningful connections and memorable moments shared by participants throughout the mobility.
         </div>
       </div>
-      <div className="project-recap-image-placeholder"></div>
+
+      <a className="project-recap-link" href="https://google.com">
+        <img
+          className="project-recap-image"
+          src="/logos/projectRecapVidLogo.jpeg"
+          alt="Project recap video preview"
+        />
+      </a>
     </section>
   );
 };
@@ -232,9 +240,9 @@ const TherapistQuestionsSection = () => {
 const ParticipantsTestimonialsSection = () => {
   return (
     <section className="page-section participants-testimonials-section">
-      <h1>Participants testimonials</h1>
+      <h1 className="section-title">Participants testimonials</h1>
       <div>
-        <img src="" alt="" />
+        <img className="participants-testimonials-img" src="/logos/testamonials_page.png" alt="testamonials" />
       </div>
     </section>
   );
